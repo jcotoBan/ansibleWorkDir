@@ -13,7 +13,7 @@ ansible-galaxy collection install linode.cloud
 
 # References
 
-https://galaxy.ansible.com/linode/cloud
+https://galaxy.ansible.com/linode/cloud.  
 https://github.com/linode/ansible_linode
 
 
