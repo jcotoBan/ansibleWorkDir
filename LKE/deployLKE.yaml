@@ -1,0 +1,12 @@
+- name: Create LKE Cluster
+  hosts: localhost
+  tasks:
+    - name: Create a LKE
+      linode.cloud.lke_cluster:
+        label: demo-ansible-lke
+        region: us-southeast
+        k8s_version: 1.24
+        node_pools:
+          - type: g6-standard-2
+            count: 1
+        state: present

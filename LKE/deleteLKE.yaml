@@ -1,0 +1,7 @@
+- name: Delete LKE Cluster
+  hosts: localhost
+  tasks:
+  - name: Delete a Linode LKE cluster
+    linode.cloud.lke_cluster:
+      label: demo-ansible-lke
+      state: absent
